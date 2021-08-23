@@ -1,0 +1,42 @@
+@use '../abstratcs/' as *;
+
+.card{
+  background-color: #fff;
+  padding: rem(30) rem(35);
+  margin-bottom: rem(30);
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px 0px rgb(0 0 0 / 40%);
+  &__icon{
+    width: 13px;
+    height: 12px;
+    margin-bottom: rem(20);
+  }
+  &__text{
+    font-size: rem(13);
+    margin-bottom: rem(25);
+  }
+  &__profile{
+    display: flex;
+    align-items: center;
+  }
+  &__avatar{
+    width: rem(40);
+    height: rem(35);
+    margin-right: rem(10);
+    img{
+      border-radius: 50%;
+    }
+  }
+
+  &__username{
+    font-size: rem(13);
+    line-height: normal;
+    margin-bottom: rem(5);
+    font-family: $font-family-alt;
+    font-weight: 700;
+  }
+  &__company{
+    font-size: rem(12);
+    display: block;
+  }
+}

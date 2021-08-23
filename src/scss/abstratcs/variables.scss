@@ -1,19 +1,21 @@
-// 576px, 768px, 992px, 1200px, 1400px
+//BREAKPOINTS
+// 576px, 768px, 992px, 1200px, 1440px, 1444px
 $breakpoints-up: (
-  'small': '36em'
+  'small': '36em',
 	'medium': '48em',
 	'large': '62em',
 	'xlarge': '75em',
-	'xxlarge': '87.5em',
+	'xxlarge': '90em',
+	'xxxlarge': '90.25em'
 );
 
-// 575px, 767px, 991px, 1199px, 1399px
+// 575px, 767px, 991px, 1199px, 1439px
 $breakpoints-down: (
 	'small': '35.9375em',
 	'medium': '47.9375em',
 	'large': '61.9375em',
 	'xlarge': '75.9375em',
-	'xxlarge': '87.4375em',
+	'xxlarge': '89.9375em'
 );
 
 $spacer: 1rem;
@@ -26,3 +28,47 @@ $spacer: (
   4: ($spacer * 1.5),
   5: ($spacer * 3)
 );
+
+$blackRock :hsl(243, 87%, 12%);
+$amethyst: hsl(238, 22%, 44%);
+$blue: hsl(224, 93%, 58%);
+$jungleGreen: hsl(170, 45%, 43%);
+$selago: hsl(240, 75%, 98%);
+$silver: hsl(0, 0%, 75%);
+
+$colors: (
+	'blackRock': $blackRock,
+ 	'amethyst':	$amethyst,
+	'blue': $blue,
+	'jungleGreen': $jungleGreen,
+	'selago': $selago,
+	'silver': $silver
+);
+
+$primary: $blue;
+$secondary: $silver;
+$success: $jungleGreen;
+$info: $amethyst;
+$white: $selago;
+$black: $blackRock;
+
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'success': $success,
+	'info': $info,
+	'white': $white,
+	'black': $black
+);
+
+$theme-fonts: (
+	400: 'Regular',
+	700: 'Bold'
+);
+
+$font-family-base: OpenSans;
+$font-family-alt: Raleway;
+$font-size-base: 16px;
+$font-weight-base: 400;
+
+$img-path: '../images/';

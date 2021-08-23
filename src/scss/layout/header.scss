@@ -1,0 +1,35 @@
+@use '../abstratcs/' as *;
+
+.header{
+  padding: rem(20) rem(22) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(140);
+  @include breakpoint('medium'){
+    padding: rem(65) rem(65) 0;
+    margin-bottom: rem(80);
+  }
+  &__img{
+    max-width: rem(74);
+    height: rem(25);
+    @include breakpoint('medium'){
+      max-width: rem(170);
+      height: rem(50);
+    }
+    
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    &:not(:last-child){
+      padding-right: rem(22);
+    }
+  }
+
+  &__link{
+    color: $black;
+  }
+}

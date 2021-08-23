@@ -1,0 +1,102 @@
+@use '../abstratcs/' as *;
+
+.footer{
+  background-color: $black;
+  color: $white;
+  padding-top: rem(100);
+  padding-bottom: rem(80);
+  @include container;
+  &__logo{
+    max-width: rem(255);
+    height: rem(70);
+    margin-bottom: rem(60);
+    @include breakpoint('medium'){
+      max-width: rem(170);
+      height: rem(50);
+    }
+  }
+  &__grid{
+    @include breakpoint('large'){
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: rem(50);
+    }
+  }
+  &__list{
+    margin-bottom: rem(90);
+    @include breakpoint('large'){
+      margin-bottom: 0;     
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+      &:not(:last-child){
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  &__phone,
+  &__email{
+    width: 20px;
+    height: 18px;
+    margin-right: rem(25);
+  }
+
+  &__nav{
+    margin-bottom: rem(75);
+    @include breakpoint('large'){
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    &-list{
+      &:not(:last-child){
+        margin-bottom: rem(75);
+      }
+      @include breakpoint('large'){
+        &:not(:last-child){
+          margin-bottom: 0;
+          padding-right: rem(75);
+        }
+      }
+    }
+    &-item{
+      &:not(:last-child){
+        margin-bottom: rem(32);
+      }      
+    }
+    &-link{
+      color: #fff;
+      &:hover{
+        color: $info;
+      }
+    }
+  }
+
+  &__social{
+    margin-bottom: rem(25);
+    display: flex;
+    justify-content: center;
+    @include breakpoint('large'){
+      // padding-left: rem(15);
+      margin-bottom: 0;
+    }
+    &-item{
+      width: 100%;
+      max-width: rem(32);
+      
+      &:not(:last-child){
+        margin-right: rem(12);
+      }
+    }
+    &-link{
+      display: block;
+      border: 1px solid $white;
+      border-radius: 50%;      
+      img{
+        vertical-align: middle;
+        padding: 5px;
+      }
+    }
+  }
+}

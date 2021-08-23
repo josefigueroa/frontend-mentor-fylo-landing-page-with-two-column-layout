@@ -1,0 +1,34 @@
+@use '../abstratcs/' as *;
+
+.link{
+  color: $success;
+  position: relative;
+  transition: .4s;
+  &:hover{
+    opacity: .6;
+    transition: .4s;    
+  }
+  &::before{
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid $success;
+    position: absolute;
+    bottom: rem(-5);
+    left: 0;
+    transition: .4s;
+  }
+  &--arrow{
+    &::after{
+      content: '';
+      background-image: url('#{$img-path}icon-arrow.svg');
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-left: rem(8);
+      transition: .4s;    
+    }
+  }
+  
+  
+}
