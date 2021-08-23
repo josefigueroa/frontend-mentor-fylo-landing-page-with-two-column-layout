@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: rem(140);
+  font-family: $font-family-alt;
   @include breakpoint('medium'){
     padding: rem(65) rem(65) 0;
     margin-bottom: rem(80);
